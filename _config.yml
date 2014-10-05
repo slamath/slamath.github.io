@@ -4,7 +4,7 @@ disqus_shortname: slamath
 reading_time:     true
 words_per_minute: 200
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://slamath.github.io
+url:              http://slamath.net
 
 # Owner/author information
 owner:
