@@ -2,9 +2,7 @@
 layout: post
 title: "Zoho Mail : Hosting E-mail Gratis"
 description: "Membuat alamat E-mail dengan nama domain sendiri secara gratis menggunakan layanan Zoho mail."
-tags: [internet, email, gratis, zoho, mail, domain]
-image:
-  background: triangular.png
+tags: [internet, email, gratis, zoho, mail, custom domain]
 comments: true
 share: true
 ---
