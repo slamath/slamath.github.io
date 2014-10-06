@@ -13,4 +13,7 @@ Oke. Sekarang saya akan memberikan step-by-step cara mendaftar layanan E-mail ho
 
 * Pertama, masuk ke [halaman ini](https://www.zoho.com/mail/zohomail-pricing.html). Di sana akan ada beberapa pilihan harga. Pilih sesuai keinginan Anda (di sini saya memilih yang gratis).
 ![Daftar Harga]({{site.url}}/images/post/zohomail-1.png)
-* Selanjutnya, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eius optio esse vitae sapiente saepe tenetur rerum at harum, exercitationem minus eveniet officiis cum repellat, natus suscipit excepturi non minima.
+* Setelah _click_ tombol __sign up__, Anda akan diarahkan ke halaman berikut. Isikan nama domain Anda disana, lalu _click_ __Add Domain__
+ ![Daftar Harga]({{site.url}}/images/post/zohomail-2.png)
+* Isikan data diri Anda
+ ![Daftar Harga]({{site.url}}/images/post/zohomail-3.png)
