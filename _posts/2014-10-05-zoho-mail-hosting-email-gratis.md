@@ -24,11 +24,11 @@ Oke. Sekarang saya akan memberikan step-by-step cara mendaftar layanan E-mail ho
 ![Daftar Harga]({{site.url}}/images/post/zohomail-5.png)
 Jika sudah sekarang waktunya untuk mengatur MX record domain kita. Gunakan data berikut ini.
 
-|Host | Address |Priority|
-|-----|---------|--------|
-|@/Blank |mx.zohomail.com|10|
-|@/ Blank |mx2.zohomail.com|20|
-
+|Host    | Address         |Priority  |
+|:-----: |:---------       |:--------:|
+|@/Blank |mx.zohomail.com  |10        |
+|@/Blank |mx2.zohomail.com |20        |
+{: rules="groups"}
 
 Kemarin saat saya mencoba, rentang waktu yang dibutuhkan hingga pengaturan dapat digunakan sekitar 15 menit dan mungkin akan berbeda untuk Anda. 
 Apabila ada yang masih belum jelas jangan sungkan untuk bertanya di kolom komentar. Selamat mencoba. :)
