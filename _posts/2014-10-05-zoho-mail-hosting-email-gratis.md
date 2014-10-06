@@ -12,5 +12,5 @@ Pada awalnya saya ingin membuat tulisan mengenai cara membuat alamat E-mail deng
 Oke. Sekarang saya akan memberikan step-by-step cara mendaftar layanan E-mail hosting di Zoho ini.
 
 * Pertama, masuk ke [halaman ini](https://www.zoho.com/mail/zohomail-pricing.html). Di sana akan ada beberapa pilihan harga. Pilih sesuai keinginan Anda (di sini saya memilih yang gratis).
-![Daftar Harga]({{site.url}}/images/post/zohomail-1.jpg)
+![Daftar Harga]({{site.url}}/images/post/zohomail-1.png)
 * Selanjutnya, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eius optio esse vitae sapiente saepe tenetur rerum at harum, exercitationem minus eveniet officiis cum repellat, natus suscipit excepturi non minima.
