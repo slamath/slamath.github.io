@@ -36,11 +36,12 @@ bing_verify:
 
 # Links to include in top navigation
 # For external links add external: true
+# - title : Foo
+#   url   : link or path
+#   external : true (optional)
 links:
-  - title: Theme Setup
-    url: /theme-setup
-  - title: External Link
-    url: http://mademistakes.com
+  - title: Clone slamath.net
+    url: https://github.com/slamath/slamath.github.io
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
