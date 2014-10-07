@@ -20,9 +20,10 @@ Oke. Sekarang saya akan memberikan step-by-step cara mendaftar layanan E-mail ho
  Alamant E-mail yang baru Anda buat tadi nantinya akan dijadikan Super Administrator.
 * Kemudian buka kotak masuk E-mail Anda untuk melakukan konfirmasi pendaftaran.
 ![Daftar Harga]({{site.url}}/images/post/zohomail-4.png)
-* Selanjutnya, perlu dilakukan konfirmasi kepemilikan nama domain, serta pengaturan MX record domain kita. Untuk melakukan konfirmasi kepemilikan nama domain, dapat dilakukan dengan beberapa cara salah satunya dengan menambah pengaturan di CNAME record domain dengan data berikut. Untuk mendapatkan data ini silahkan masuk ke akun Super Administrator tadi [di sini](http://zoho.com/mail), lalu buka __Control Panel >> Domains__.
+* Selanjutnya, perlu dilakukan konfirmasi kepemilikan nama domain, serta pengaturan MX record domain kita. Untuk melakukan konfirmasi kepemilikan nama domain, dapat dilakukan dengan beberapa cara salah satunya dengan menambah pengaturan di CNAME record domain dengan data berikut. Untuk mendapatkan data ini silahkan masuk ke akun Super Administrator tadi [di sini](http://zoho.com/mail), lalu buka __Control Panel >> Domains__. 
 ![Daftar Harga]({{site.url}}/images/post/zohomail-5.png)
-Jika sudah sekarang waktunya untuk mengatur MX record domain kita. Gunakan data berikut ini.
+* Jika sudah sekarang waktunya untuk mengatur MX record domain kita. Gunakan data berikut ini.
+
 |Host    | Address         |Priority  |
 |:-----: |:---------:       |:--------:|
 |@/kosongi |mx.zohomail.com  |10        |
