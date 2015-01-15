@@ -1,55 +1,43 @@
-<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
-	<button class="dl-trigger">Buka Menu</button>
-	<ul class="dl-menu">
-		<li><a href="{{ site.url }}">Depan</a></li>
-		<li>
-			<a href="#">Tentang</a>
-			<ul class="dl-submenu">
-				<li>
-					<img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
-					<h4>{{ site.owner.name }}</h4>
-					<p>{{ site.owner.bio }}</p>
-				</li>
-				<li><a href="{{ site.url }}/about/">Lebih Lanjut</a></li>
-				{% if site.owner.email %}<li>
-					<a href="mailto:{{ site.owner.email }}"><i class="fa fa-envelope"></i> Email</a>
-				</li>{% endif %}
-				{% if site.owner.twitter %}<li>
-					<a href="http://twitter.com/{{ site.owner.twitter }}"><i class="fa fa-twitter"></i> Twitter</a>
-				</li>{% endif %}
-				{% if site.owner.facebook %}<li>
-					<a href="http://facebook.com/{{ site.owner.facebook }}"><i class="fa fa-facebook"></i> Facebook</a>
-				</li>{% endif %}
-				{% if site.owner.google_plus %}<li>
-					<a href="https://google.com/{{ site.owner.google_plus }}"><i class="fa fa-google-plus"></i> Google+</a>
-				</li>{% endif %}
-				{% if site.owner.linkedin %}<li>
-					<a href="http://linkedin.com/in/{{ site.owner.linkedin }}"><i class="fa fa-linkedin"></i> LinkedIn</a>
-				</li>{% endif %}
-				{% if site.owner.github %}<li>
-					<a href="http://github.com/{{ site.owner.github }}"><i class="fa fa-github"></i> GitHub</a>
-				</li>{% endif %}
-				{% if site.owner.stackexchange %}<li>
-					<a href="{{ site.owner.stackexchange }}"><i class="fa fa-stack-exchange"></i> Stackexchange</a>
-				</li>{% endif %}
-				{% if site.owner.instagram %}<li>
-					<a href="http://instagram.com/{{ site.owner.instagram }}"><i class="fa fa-instagram"></i> Instagram</a>
-				</li>{% endif %}
-				{% if site.owner.flickr %}<li>
-					<a href="http://www.flickr.com/photos/{{ site.owner.flickr }}"><i class="fa fa-flickr"></i> Flickr</a>
-				</li>{% endif %}
-				{% if site.owner.tumblr %}<li>
-					<a href="http://{{ site.owner.tumblr }}.tumblr.com"><i class="fa fa-tumblr"></i> Tumblr</a>
-				</li>{% endif %}
-			</ul><!-- /.dl-submenu -->
-		</li>
-		<li>
-			<a href="#">Tulisan</a>
-			<ul class="dl-submenu">
-				<li><a href="{{ site.url }}/posts/">Semua Tulisan</a></li>
-				<li><a href="{{ site.url }}/tags/">Semua Tag</a></li>
-			</ul>
-		</li>
-		{% for link in site.links %}<li>{% if link.external %}<a href="{{ link.url }}" target="_blank">{{ link.title }}</a>{% else %}<a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>{% endif %}</li>{% endfor %}
-	</ul><!-- /.dl-menu -->
-</nav><!-- /.dl-menuwrapper -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="{{ site.url }}" title="Beranda"><i class="fa fa-home hidden-xs"></i><span class="visible-xs-inline">Beranda</span></a></li>
+        <li><a href="{{ 'feed.xml' | prepend: site.baseurl }}" title="RSS Feed"><i class="fa fa-rss-square hidden-xs"></i><span class="visible-xs-inline">RSS Feed</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" title="Kategori"><i class="fa fa-list-ul hidden-xs"></i><span class="visible-xs-inline"> Kategori</span></a>
+          <ul class="dropdown-menu" role="menu">
+            {% for pg in site.pages %}
+            {% if pg.is_category == 1 %}
+            <li><a href="{{ pg.url }}">{{ pg.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+            <li class="divider"></li>
+            <li><a href="{{ '/tags/' | prepend: site.baseurl }}">Tags</a></li>
+          </ul>
+        </li>
+        <li><a href="#tentang">Tentang</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://facebook.com/{{ site.owner.facebook }}" title="Facebook"><i class="fa fa-facebook hidden-xs"></i><span class="visible-xs-inline">Facebook</span></a></li>
+        <li><a href="http://twitter.com/{{ site.owner.twitter }}" title="Twitter"><i class="fa fa-twitter hidden-xs"></i><span class="visible-xs-inline">Twitter</span></a></li>
+        <li><a href="http://github.com/{{ site.owner.github }}" title="Github"><i class="fa fa-github hidden-xs"></i><span class="visible-xs-inline">Github</span></a></li>
+        <li><a href="http://telegram.me/{{ site.owner.telegram }}" title="Telegram"><i class="fa fa-paper-plane hidden-xs"></i><span class="visible-xs-inline">Telegram</span></a></li>
+        <li><a href="mailto:mail@slamath.net" title="E-mail"><i class="fa fa-envelope hidden-xs"></i><span class="visible-xs-inline">E-mail</span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

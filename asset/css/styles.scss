@@ -1,0 +1,269 @@
+---
+---
+
+@import "bootstrap";
+@import "font-awesome";
+
+body
+{
+	background: url('../images/halftone.png') repeat;
+}
+
+.page-content
+{
+	margin-top: 100px
+}
+
+article
+{
+	background-color: #fff;
+	border-radius: 3px;
+	border: 1px solid #fff;
+	padding: 20px;
+	text-align: justify;
+	margin: 0 0 20px 0;
+
+	p, ul
+	{
+		font-size: 18px;
+		letter-spacing: 0.01em;
+		line-height: 30px;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.post-meta
+	{
+		font-size: small;
+	}
+}
+
+.post-comment
+{
+	background: #fff;
+	@include border-bottom-radius(3px);
+	padding: 10px;
+	border-top: 5px solid #a3d39c;
+}
+
+.footer
+{
+	min-height: 100px;
+	background-color: darken(#35404f, 15%);
+	color: #fff;
+	margin-top: 50px;
+	padding: 20px 0;
+
+
+	.owner
+	{
+		display: block;
+		margin: 10px 0 50px 0;
+		width: 100%;
+		min-height: 100px;
+		border-radius: 3px;
+		padding: 10px;
+
+		.bio 
+		{
+			padding: 30px 30px;
+		}
+	}
+
+	.copyright
+	{
+		text-align: center;
+	}
+
+	&:before
+	{
+		content:"";
+		width:0;
+		height:0;
+		position:relative;
+		left:50%;
+		top:-52px;
+		margin-left:-27px;
+		border-left:27px solid transparent;
+		border-right:27px solid transparent;
+		border-bottom:16px solid darken(#35404f, 15%);
+	}
+
+}
+
+.navbar-default
+{
+	border-bottom: 3px solid #e45f56;
+}
+
+/* railscasts syntax highlighting */
+
+.highlight, .highlight pre
+{
+	background-color: #2B2B2B;
+	border-radius: 3px;
+	border-color: #2B2B2B;
+
+	.hll
+	{
+		background-color: #ffc !important;
+	}
+
+	.gd
+	{
+		color: #E6E1DC !important;
+		background-color: #600 !important;
+	}
+
+	.gr
+	{
+		color: #FFF !important;
+		background-color: #900 !important;
+	}
+
+	.gi
+	{
+		color: #E6E1DC !important;
+		background-color: #144212 !important;
+	}
+
+	.kt
+	{
+		color: #DA4939 !important;
+	}
+
+	.no
+	{
+		color: #6D9CBE !important;
+	}
+
+	.c,.cm,.c1,.cs
+	{
+		color: #BC9458 !important; font-style: italic !important;
+	}
+
+	.err,.g,.l,.n,.o,.x,.p,.ge,
+	.go,.gp,.gs,.gt,.ld,.nb,.nc,.nd,
+	.ni,.ne,.nl,.nn,.nx,.py,.ow,.w,
+	.bp
+	{
+		color: #E6E1DC !important;
+	}
+
+	.k,.cp,.kc,.kd,.kn,.kp,.kr,
+	.nt
+	{
+		color: #CC7833 !important;
+	}
+
+	.gh,.gu
+	{
+		color: #FFF !important;
+	}
+
+	.m,.s,.mf,.mh,.mi,.mo,.sb,.sc,
+	.sd,.s2,.se,.sh,.si,.sx,.sr,.s1,
+	.ss,.il
+	{
+		color: #A5C261 !important;
+	}
+
+	.na,.nf
+	{
+		color: #FFC66D !important;
+	}
+
+	.nv,.vc,.vg,.vi
+	{
+		color: #D0D0FF !important;
+	}
+}
+
+
+
+/* Highlight with line numbers */
+
+table.highlighttable
+{
+	font-size: 14px;
+	overflow-x:auto;
+  	display:block;
+  	border-radius: 3px;
+
+	>tr, >tr>td
+	{
+		display: table-cell;
+		vertical-align: inherit;
+		padding:0;
+		border:0;
+	}
+
+	td.code
+	{
+		width:100%;
+
+		>.highlight
+		{
+
+			>pre 
+			{
+				display: block;
+				margin: 0;
+				word-break: break-all;
+				word-wrap: break-word;
+				background-color: #2B2B2B;
+				@include border-right-radius(3px);
+				@include border-left-radius(0);
+				border-width: 1px 1px 1px 0;
+				border-color: #2B2B2B;
+				border-style: solid;
+			}
+		}
+	}
+
+	.linenodiv
+	{
+		@include border-left-radius(3px);
+		border-width: 1px 0 1px 1px;
+		border-color: #2B2B2B;
+		border-style: solid;
+
+		>pre 
+		{
+			border:0;
+			margin:0;
+
+			>code
+			{
+				white-space: pre;
+			}
+		}
+	}
+
+}
+
+/* Social Share */
+.share-facebook
+{
+	color: #3b5998;
+
+	&:hover
+	{
+		color: darken(#3b5998, 10);
+	}
+}
+
+.share-twitter
+{
+	color: #55acee;
+
+
+	&:hover
+	{
+		color: darken(#55acee, 10);
+	}
+}
+
+.share-google-plus
+{
+	color: #dd4b39;
+}

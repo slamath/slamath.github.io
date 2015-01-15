@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"><i class="fa fa-folder-o"></i> {{ page.title }}</h1>
+  </header>
+	
+  <article class="post-content">
+	<p>
+		<ul class="list-unstyled">
+				{% capture category %}{{ page.category_name | strip_newlines }}{% endcapture %}
+				{% for post in site.categories[category] %}
+					<li><ul class="list-inline"><li><small class="text-muted">{{ post.date | date: "%d/%m/%Y" }}</small></li><li><a href="{{ post.url }}">{{ post.title }}</a> {% if post.tags.size > 0 %}[tags: {% for tag in post.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}</li></ul></li>
+				{% endfor %}
+		</ul>
+	</p>
+  </article>
+
+</div>

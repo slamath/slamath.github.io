@@ -1,74 +1,63 @@
-title:            slamath.net
-description:      Let it being random. Let it being different.
+# Site settings
+title:          slamath.net
+email:          mail@slamath.net
+description:    ""
+baseurl:        "" # the subpath of your site, e.g. /blog/
+url:            "http://slamath.net" # the base hostname & protocol for your site
+
+# Build settings
+timezone:     Asia/Jakarta
+future:       true
+highlighter:  pygments
+markdown:     kramdown
+permalink:    /:categories/:title/
+paginate:     10
+excerpt_separator: "<!-- more -->"  # Sparator for spoiler
 disqus_shortname: slamath
-reading_time:     true
-words_per_minute: 200
-#Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://slamath.net
+
+# path
+path:
+ css:         /asset/css/
+ js:          /asset/js/
+ images:      /asset/images/
+
+# sass config
+sass:
+  sass_dir:   "asset/_sass"
+  style:      compressed
+
+# default front matter
+defaults:
+  -
+    scope:
+      path:   ""
+      type:   "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path:   "blog"
+      type:   "pages"
+    values:
+      layout: "category"
+      is_category: 1
+  -
+    scope:
+      path:   "blog/matematika"
+      type:   "posts"
+    values:
+      layout: "post-math"
 
 # Owner/author information
 owner:
   name:           Slamet Aprilianto
   avatar:         avatar.jpg
-  bio:            "A mathematic student who loves IT."
+  bio:            > # 
+                  Just a super-noob. But let me share something i know. ;)
+                  Let's talk about IT, math, japanese language, etc~
   email:          mail@slamath.net
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        http://twitter.com/_slamath
-  facebook:       http://facebook.com/slamath.arato
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:    
-
-# Background image to be tiled on all pages
-background: 
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
-
-# Links to include in top navigation
-# For external links add external: true
-# - title : Foo
-#   url   : link or path
-#   external : true (optional)
-links:
-  - title: Clone slamath.net
-    url: https://github.com/slamath/slamath.github.io
-    external: true
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Jakarta
-future:      true
-highlighter: pygments
-markdown:    kramdown
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
-
-# Amount of post to show on home page
-paginate: 5
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: true
-
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+  # Social networking accounts
+  twitter:        slametapr
+  facebook:       slametapr
+  github:         slamath
+  telegram:       slametapr
