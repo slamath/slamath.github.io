@@ -6,8 +6,20 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
 
+	{% if page.title %}
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" value="{{ page.excerpt | strip_html }}">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+	{% if page.image %}<meta property="og:image" content="{{ page.image }}" />{% endif %}
+	<meta property="og:description" content="{{ page.excerpt | strip_html }}" />
+	{% endif %}
+
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ site.path.css | prepend: site.baseurl | append: "styles.css" }}">
+    <link rel="stylesheet" href="{{ "styles.css" | prepend: site.path.css | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="icon" href="{{ 'favicon.ico' | prepend: site.path.images | prepend: site.baseurl }}">
 
