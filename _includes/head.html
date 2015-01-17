@@ -4,11 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.title %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.title %}loremm dolor sit amet, consectetur a{% else %}{{ site.description }}{% endif %}">
 
 	{% if page.title %}
 	<!-- Twitter Card data -->
-	<meta name="twitter:card" value="{{ page.excerpt | strip_html | strip_newlines }}">
+	<meta name="twitter:card" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ex esse accusamus eius illo architecto voluptatem.">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="{{ page.title }}" />
