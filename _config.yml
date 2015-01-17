@@ -14,6 +14,7 @@ permalink:    /:categories/:title/
 paginate:     10
 excerpt_separator: "<!-- more -->"  # Sparator for spoiler
 disqus_shortname: slamath
+fb_app_id: 774529292639047
 
 # path
 path:
